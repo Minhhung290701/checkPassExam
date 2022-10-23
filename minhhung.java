@@ -7,13 +7,15 @@ public class minhhung {
      * @return
      */
     public static String checkPasstExam(int writep, int listenp) {
+        string data="";
         if(writep < 0 || writep > 70 || listenp < 0 || listenp > 30) {
-            return "error";
+            data = "error";
         }
         if(writep + listenp >= 40) {
-            return "true";
+            data = "true";
         }
-        return "false";
+        data = "false"
+        return "data";
     }
 
     public static void main(String[] args) {
